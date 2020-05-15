@@ -1,9 +1,11 @@
 server:
   port: 8080
 
+#配置 Spring Cloud Config Server
 spring:
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/wangmaoxiong/spring-cloud-config-store.git #指向 git 仓库地址, 结尾的 .git 可以省略.
+          #url ：指向 git 仓库地址, 结尾的 .git 可以省略，Config Server 自动会去这里请求数据
+          uri: https://github.com/wangmaoxiong/spring-cloud-config-store.git
